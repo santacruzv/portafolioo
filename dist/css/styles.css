@@ -10,6 +10,192 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ 
+.btn {
+  padding: 12px 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 30px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
+.btn-primary {
+  background: linear-gradient(135deg, #05305e, #2e4660); 
+  color: #ffffff;
+  border: none;
+  box-shadow: 0px 4px 15px rgba(4, 116, 237, 0.3); 
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #1c1f22, #003a70); 
+  transform: translateY(-3px); 
+  box-shadow: 0px 6px 20px rgba(0, 123, 255, 0.4); 
+}
+
+
+.btn-dark {
+  background: linear-gradient(135deg, #343a40, #495057); 
+  color: #ffffff;
+  border: none;
+  box-shadow: 0px 4px 15px rgba(52, 58, 64, 0.3);
+}
+
+.btn-dark:hover {
+  background: linear-gradient(135deg, #495057, #343a40); 
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 20px rgba(52, 58, 64, 0.4);
+}
+
+
+.btn:active {
+  transform: translateY(2px); 
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+.content-section .btn,
+.callout .btn {
+  background: linear-gradient(135deg, #392294, #05082a); 
+  color: #fff;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(255, 126, 95, 0.3);
+}
+
+.content-section .btn:hover,
+.callout .btn:hover {
+  background: linear-gradient(135deg, #1e256d, #231815); 
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 15px rgba(255, 126, 95, 0.4);
+}
+
+
+ .content-section {
+  padding: 60px 0;
+}
+
+.content-section h2 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.content-section .btn {
+  padding: 12px 30px;
+  font-weight: bold;
+}
+
+.btn:active {
+  transform: translateY(3px); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.btn {
+  transition: transform 0.1s ease-in-out; 
+}
+
+
+ .portfolio-item img {
+  width: 1000px;
+  height: 345px;
+  object-fit: cover; 
+}
+ .btn-dark {
+  background-color: #343a40; 
+  color: white;
+  border: none; 
+  font-size: 1.1rem; 
+  padding: 15px 30px; 
+  border-radius: 30px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.btn-dark:hover {
+  background-color: #495057; 
+  transform: translateY(-2px); 
+}
+
+.section-heading {
+  font-size: 2.5rem; 
+  font-weight: bold; 
+  color: #333; 
+  text-transform: uppercase; 
+  margin-bottom: 1rem; 
+}
+
+
+ .callout {
+  padding: 60px 0; 
+  background-color: #f9f9f9;
+  border-radius: 10px; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+  margin: 40px 0; 
+}
+
+.callout-title {
+  font-size: 2.5rem; 
+  font-weight: 700; 
+  color: #333; 
+  margin-bottom: 20px; 
+}
+
+.callout-emphasis {
+  font-size: 1.5rem; 
+  font-weight: 600; 
+  color: #007bff; 
+  margin-bottom: 15px; 
+  text-transform: uppercase; 
+}
+
+.callout-text {
+  font-size: 1.2rem; 
+  color: #555; 
+  margin-bottom: 30px; 
+  font-style: italic; 
+}
+
+.btn-primary {
+  background-color: #007bff; 
+  border: none;
+  padding: 10px 30px; 
+  font-size: 1.1rem; 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; 
+  transform: translateY(-3px); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+
+ 
+
+ .profile-img {
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  border: 3px solid #fff; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.btn-primary {
+  background-color: #007bff; 
+  border: none; 
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; 
+}
+
+
 :root {
   --bs-blue: #1D809F;
   --bs-indigo: #6610f2;
@@ -17,7 +203,7 @@
   --bs-pink: #d63384;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
-  --bs-yellow: #ecb807;
+  --bs-yellow: #0781ec;
   --bs-green: #198754;
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
@@ -35,7 +221,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #1D809F;
-  --bs-secondary: #ecb807;
+  --bs-secondary: #0794ec;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ecb807;
@@ -384,6 +570,7 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
+  appearance: none;
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -442,6 +629,7 @@ legend + * {
 [type=search] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
+  appearance: none;
 }
 
 /* rtl:raw:
@@ -463,6 +651,7 @@ legend + * {
 ::file-selector-button {
   font: inherit;
   -webkit-appearance: button;
+  appearance: none;
 }
 
 output {
@@ -594,7 +783,7 @@ progress {
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "— ";
 }
 
 .img-fluid {
@@ -10959,7 +11148,7 @@ html {
 
 .callout {
   padding: 15rem 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-callout.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/dose-media-bU6JyhSI6zo-unsplash.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11014,7 +11203,7 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/prog.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
